@@ -1,0 +1,29 @@
+# Descargar repositorio
+
+git clone https://github.com/Rodrigo0461/dc-node-proxy.gi
+
+#ingresar al repositorio 
+
+cd dc-node-proxy/
+
+# Validar si existen contenedores en ejecución
+
+docker ps
+
+# Ejecutar Dockercompose y escalar el servicio api a 2
+
+docker-compose up -d --scale api=2
+
+# validar contenedores en ejecución
+
+docker ps
+
+docker-compose ps
+
+# probar balanceador
+
+curl localhost:3000
+
+
+
+
